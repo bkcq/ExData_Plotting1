@@ -41,7 +41,8 @@ Plot4<-function(){
         with(subset(dt2), lines(DateTime,Sub_metering_2, col="red"))
         with(subset(dt2), lines(DateTime,Sub_metering_3,col="blue"))
         legend("topright",lty=1,col=c("black","red","blue"),cex=0.2,
-               legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
+               legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), 
+               bty="n")
     
     ##plot4
     plot(DateTime,Global_reactive_power, "l", xlab="datetime", ylab="Global_reactive_power")
